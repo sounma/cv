@@ -1,0 +1,61 @@
+/* General css */
+body {
+    font-family: "geosanslight";
+}
+
+h1 {
+    font-family: "lemonmilk";
+}
+
+/* Left Side */
+.left_side {
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+    padding: 20px;    
+}
+
+/* Trait */
+.trait{
+    position: relative;
+    z-index: 1;
+    width: 100;
+    left: -350
+}
+
+/* Photo */
+.photo img {
+    height: 30%;
+    border-radius: 50%;
+}
+
+/* Name */
+
+.langue-ang {
+}
+
+
+.block-color {
+    position: relative;
+    background-color: pink;
+    height: 35%;
+    width: 25%;
+    margin-top: -240px;
+    z-index: -4;
+}
+
+progress {
+    background-color: black;
+}
+
+
+/* Font */
+@font-face {
+    font-family: "lemonmilk";
+    src: url("../fonts/lemonmilk.ttf");
+}
+
+@font-face {
+    font-family: "geosanslight";
+    src: url("../fonts/GeosansLight.ttf");
+}
