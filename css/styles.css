@@ -4,23 +4,25 @@ body {
 }
 
 h1 {
-    font-family: "lemonmilk";
+    font-family: "lemonmilk" r;
 }
 
 /* Left Side */
 .left_side {
+    display: inline-block;
+    float: left;
     height: 100%;
-    width: 50%;
+    width: 30%;
     z-index: 2;
-    padding: 20px;    
+    padding: 20px;
+    margin-left: 20;
 }
 
 /* Trait */
 .trait{
-    position: relative;
     z-index: 1;
     width: 100;
-    left: -350
+    left: -350;
 }
 
 /* Photo */
@@ -29,25 +31,80 @@ h1 {
     border-radius: 50%;
 }
 
-/* Name */
 
 .langue-ang {
+    position: absolute;
+    margin-top: -70;
+    margin-left: 60;
+    padding: 20;
+}
+.langue-all {
+    position: relative;
+    margin-top: -8;
+    margin-left: 50;
+    padding: 20;
+}
+.monocercle {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px; 
+    border: 2px;
 }
 
 
 .block-color {
     position: relative;
     background-color: pink;
-    height: 35%;
-    width: 25%;
-    margin-top: -240px;
+    height: 40%;
+    width: 80%;
+    margin-top: -300px;
     z-index: -4;
+    margin-left: -30;
 }
 
+/* barre de progression pour les logiciels */
 progress {
     background-color: black;
+    height: 5;
+    position: absolute;
+    margin-top: 15;
+    margin-left: 20;
 }
 
+
+.right_side {
+    display: inline-block;
+    float: right;
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+    padding: 20px;
+    margin-right: 60;
+}
+
+.block-color_right {
+    position: relative;
+    background-color: pink;
+    height: 55%;
+    width: 50%;
+    margin-top: -800;
+    z-index: -1;
+    margin-left: 110;    
+}
+.statue {
+    position: relative;
+    margin-left: 60;
+}
+
+.trait_right {
+    z-index: 1;
+    width: 100;
+    margin-left: 60;
+}
+
+.deuxieme {
+    margin-left: 60;
+}
 
 /* Font */
 @font-face {
@@ -58,4 +115,9 @@ progress {
 @font-face {
     font-family: "geosanslight";
     src: url("../fonts/GeosansLight.ttf");
+}
+
+@media screen only and (min-width: 1920px){                   
+    .left_side{width: 20%;}
+    .right_side{width: 20%;}
 }
